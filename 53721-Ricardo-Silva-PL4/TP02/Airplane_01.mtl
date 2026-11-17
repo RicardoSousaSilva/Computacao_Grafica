@@ -1,0 +1,7 @@
+newmtl wire_006135113
+Kd 0.8 0.8 0.8
+map_Kd Body_DIFFUSE.ppm
+
+newmtl wire_141007058
+Kd 0.8 0.8 0.8
+map_Kd Engine_DIFFUSE.ppm
