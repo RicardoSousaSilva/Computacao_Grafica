@@ -1,0 +1,29 @@
+#version 330 core
+
+// Input vertex data, normal and color data
+layout(location = 0) in vec3 vertexPosition;
+layout(location = 1) in vec3 vertexNormal;
+layout(location = 2) in vec3 vertexColor;
+layout(location = 3) in vec2 vertexUV;
+
+// Values that stay constant for the whole mesh.
+uniform mat4 mvp;     // projection * view
+uniform mat4 trans;   // model matrix
+uniform mat3 normalMat; // matriz das normais (calculada no CPU)
+
+// Output fragment data
+out vec3 fragmentColor;
+out vec3 fragPos;
+out vec3 fragNormal;
+out vec2 fragUV;
+
+void main()
+{
+	vec4 worldPos = trans * vec4(vertexPosition, 1.0);
+	gl_Position = mvp * worldPos;
+
+	fragPos = vec3(worldPos);
+	fragNormal = normalMat * vertexNormal;
+	fragmentColor = vertexColor;
+	fragUV = vertexUV;
+}

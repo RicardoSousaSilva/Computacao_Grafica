@@ -1,0 +1,59 @@
+#version 330 core
+
+// Interpolated values from the vertex shaders
+in vec3 fragmentColor;
+in vec3 fragPos;
+in vec3 fragNormal;
+in vec2 fragUV;
+
+// Ouput data
+out vec4 color;
+
+uniform vec3 lightPos;
+uniform vec3 lightColor;
+uniform vec3 viewPos;
+uniform vec3 ambientColor;
+uniform vec3 fogColor;
+uniform float fogDensity;
+uniform vec3 tint;
+uniform float shininess;
+uniform float emissive;
+uniform sampler2D tex;
+uniform float useTexture;
+uniform float alpha;
+
+void main(){
+
+	vec3 base = fragmentColor * tint;
+	if (useTexture > 0.5)
+		base = texture(tex, fragUV).rgb * tint;
+
+	// objetos que emitem luz (luzes da pista) nao sao sombreados
+	if (emissive > 0.5)
+	{
+		color = vec4(base, 1.0);
+		return;
+	}
+
+	// Phong: ambiente + difusa + especular
+	vec3 N = normalize(fragNormal);
+	vec3 L = normalize(lightPos - fragPos);
+	vec3 V = normalize(viewPos - fragPos);
+	if (dot(N, V) < 0.0) N = -N;          // malhas com faces nos dois sentidos
+
+	vec3 R = reflect(-L, N);
+	float diff = max(dot(N, L), 0.0);
+	float spec = (diff > 0.0) ? pow(max(dot(V, R), 0.0), shininess) : 0.0;
+
+	vec3 ambient  = ambientColor;
+	vec3 diffuse  = diff * lightColor;
+	vec3 specular = 0.35 * spec * lightColor;
+
+	vec3 lit = min((ambient + diffuse) * base + specular, vec3(1.0));
+
+	// neblina com a distancia (esconde o limite do terreno)
+	float d = length(viewPos - fragPos);
+	float fx = d * fogDensity;
+	float fog = 1.0 - exp(-fx * fx);
+	color = vec4(mix(lit, fogColor, clamp(fog, 0.0, 1.0)), alpha);
+}
