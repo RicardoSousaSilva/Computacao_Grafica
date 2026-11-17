@@ -1,0 +1,226 @@
+newmtl MAINbodymaterial
+Kd 0.660 0.680 0.700
+map_Kd f_104gLuft.png
+
+newmtl Material.002
+Kd 0.800 0.800 0.800
+
+newmtl _9cd4d4c_dds
+Kd 0.700 0.700 0.700
+
+newmtl ab958c88_dds
+Kd 0.850 0.850 0.800
+map_Kd ab958c88.png
+
+newmtl engine
+Kd 0.270 0.250 0.240
+map_Kd f_104g_c.jpg
+
+newmtl front_landing_gear
+Kd 0.750 0.750 0.780
+map_Kd f_104gLuft.png
+
+newmtl gunsight
+Kd 0.800 0.800 0.800
+
+newmtl interior
+Kd 0.180 0.200 0.180
+map_Kd f_104g_interior_c.jpg
+
+newmtl material_12_325
+Kd 0.500 0.500 0.500
+map_Kd fr_rocket_pylon_aa20_c.jpg
+
+newmtl material_14_349
+Kd 0.030 0.030 0.040
+
+newmtl material_15_349
+Kd 0.290 0.309 0.299
+map_Kd f_104g_cockpit_c.jpg
+
+newmtl material_19_349
+Kd 0.000 0.000 0.000
+
+newmtl material_1_324
+Kd 0.260 0.004 0.000
+
+newmtl material_22_349
+Kd 0.270 0.284 0.280
+map_Kd f_104g_cockpit_labels_c.jpg
+
+newmtl material_23_350
+Kd 0.271 0.286 0.281
+map_Kd f_104g_cockpit_1_c.jpg
+
+newmtl material_24_350
+Kd 0.284 0.305 0.292
+map_Kd f_104g_cockpit_2_c.jpg
+
+newmtl material_25_350
+Kd 0.144 0.150 0.147
+map_Kd f_104g_cockpit_control_stick_c.jpg
+
+newmtl material_26_349
+Kd 0.941 1.000 0.941
+
+newmtl material_27_350
+Kd 0.220 0.237 0.230
+d 0.50
+map_Kd zflare_green.jpg
+map_d zflare_green_a.png
+
+newmtl material_2_348
+Kd 0.000 0.000 0.000
+
+newmtl material_36_349
+Kd 0.213 0.229 0.223
+d 0.50
+map_Kd glass_dirt.jpg
+map_d glass_dirt_a.png
+
+newmtl material_37_353
+Kd 0.251 0.265 0.259
+d 0.50
+map_Kd lens_glass.jpg
+map_d lens_glass_a.png
+
+newmtl material_40_354
+Kd 0.250 0.270 0.220
+map_Kd seat.jpg
+
+newmtl material_41_354
+Kd 0.208 0.226 0.218
+map_Kd us_gauge_timer_c.jpg
+
+newmtl material_42_354
+Kd 0.294 0.314 0.303
+map_Kd us_gauge_wind_unit_c.jpg
+
+newmtl material_43_354
+Kd 0.134 0.140 0.136
+map_Kd us_gauge_liquid_oxygen_quantity_indicator_c.jpg
+
+newmtl material_45_359
+Kd 0.242 0.264 0.252
+map_Kd us_gauge_radar_display_with_control__panel_c.jpg
+
+newmtl material_46_360
+Kd 0.251 0.265 0.259
+d 0.50
+map_Kd us_gauge_radar_display_with_control__panel_glass_c.jpg
+map_d panel_glass_c_a.png
+
+newmtl material_47_359
+Kd 0.118 0.121 0.121
+map_Kd us_gauge_radar_display_with_control__panel_glass_c.jpg
+
+newmtl material_48_360
+Kd 0.226 0.247 0.234
+map_Kd us_gauge_speed_indicator_mtype_avu_8_a_c.jpg
+
+newmtl material_50_366
+Kd 0.211 0.230 0.221
+map_Kd us_gauge_position_indicator_and_course_type_phi_4a_c.jpg
+
+newmtl material_51_366
+Kd 0.173 0.174 0.175
+map_Kd us_gauge_position_indicator_and_course_type_phi_4a_disk_c.jpg
+
+newmtl material_52_366
+Kd 0.137 0.144 0.139
+map_Kd us_gauge_ground_speed_error_indicator_c.jpg
+
+newmtl material_53_367
+Kd 0.260 0.276 0.269
+map_Kd us_gauge_oil_indicator_c.jpg
+
+newmtl material_54_367
+Kd 0.298 0.318 0.307
+map_Kd us_gauge_air_temperature_in_front_of_the_turbine_c.jpg
+
+newmtl material_55_372
+Kd 0.238 0.259 0.247
+map_Kd us_gauge_nozzle_position_indicator_c.jpg
+
+newmtl material_56_372
+Kd 0.252 0.267 0.260
+map_Kd us_gauge_fuel_in_internal_tanks_c.jpg
+
+newmtl material_57_372
+Kd 0.113 0.116 0.116
+map_Kd us_gauge_fuel_in_outboard_tanks_c.jpg
+
+newmtl material_58_372
+Kd 0.228 0.250 0.237
+map_Kd us_gauge_angle_of_attack_indicator_c.jpg
+
+newmtl material_59_372
+Kd 0.188 0.190 0.188
+map_Kd us_gauge_barometric_altimeter_type_aau_37_a_c.jpg
+
+newmtl material_60_377
+Kd 0.262 0.278 0.271
+map_Kd us_gauge_cabin_altitude_a.jpg
+
+newmtl material_61_378
+Kd 0.100 0.103 0.102
+map_Kd us_gauge_compass_type_ms_17983_2_c.jpg
+
+newmtl material_62_378
+Kd 0.190 0.192 0.190
+map_Kd us_gauge_accelerometer_type_10g_c.jpg
+
+newmtl material_64_378
+Kd 0.214 0.230 0.224
+map_Kd us_gauge_rpm_type_100_9_c.jpg
+
+newmtl material_65_382
+Kd 0.286 0.307 0.293
+map_Kd us_gauge_gas_temperature_a.jpg
+
+newmtl material_66_382
+Kd 0.224 0.243 0.236
+map_Kd us_gauge_oil_pressure1_100_c.jpg
+
+newmtl material_68_382
+Kd 0.299 0.319 0.308
+map_Kd de_gauge_clock_type_fl_23885_bo_uk1_c.jpg
+
+newmtl material_70_388
+Kd 0.224 0.242 0.235
+map_Kd us_gauge_pressure_hydraulic_system_type_x1000_c.jpg
+
+newmtl material_71_388
+Kd 0.160 0.162 0.161
+map_Kd us_gauge_bank_a.jpg
+
+newmtl material_72_388
+Kd 0.149 0.155 0.151
+map_Kd us_gauge_aviahorizon_id_4012d_c.jpg
+
+newmtl material_73_395
+Kd 0.295 0.315 0.304
+map_Kd us_gauge_additional_autonomous_horizon_c.jpg
+
+newmtl material_74_395
+Kd 0.257 0.273 0.266
+map_Kd us_gauge_fuel_flow_12000_1_c.jpg
+
+newmtl material_75_395
+Kd 0.121 0.125 0.124
+map_Kd us_gauge_vario_type_c_2_c.jpg
+
+newmtl material_77_395
+Kd 0.247 0.269 0.257
+map_Kd us_gauge_altitude_control_trim_position_c.jpg
+
+newmtl material_8_324
+Kd 0.600 0.620 0.640
+map_Kd f_104_pylon_metal_c.jpg
+
+newmtl rear_landing_strut
+Kd 0.750 0.750 0.780
+map_Kd f_104gLuft.png
+
+newmtl reflector
+Kd 0.800 0.800 0.800
